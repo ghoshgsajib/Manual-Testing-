@@ -180,7 +180,6 @@ Banking apps must be secure. Below is the security coverage:
 ---
 
 Author
-
-###Name: Sajib Ghosh
+Name: Sajib Ghosh
 Project: SecureBank Manual & Security Testing 
 University: Daffodil International University
