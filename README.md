@@ -1,6 +1,6 @@
 # 🏦 SecureBank – Complete Manual & Security Testing Project
 
-This repository contains a **complete end-to-end Manual Testing ** for a simulated banking application called **SecureBank**. The aim of this project is to demonstrate strong testing knowledge in both **functional quality assurance**  following **industry standards**, **bank-domain testing processes**, and **OWASP Top 10 security testing techniques**.
+This repository contains a complete end-to-end Manual Testing  for a simulated banking application called **SecureBank**. The aim of this project is to demonstrate strong testing knowledge in both **functional quality assurance**  following **industry standards**, **bank-domain testing processes**, and **OWASP Top 10 security testing techniques**.
 
 This project is ideal for:
 - SQA / QA Engineers  
