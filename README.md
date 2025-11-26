@@ -1,6 +1,6 @@
-# 🏦 SecureBank – Complete Manual & Security Testing Project (SQA Portfolio)
+# 🏦 SecureBank – Complete Manual & Security Testing Project
 
-This repository contains a **complete end-to-end Manual Testing + Security Testing project** for a simulated banking application called **SecureBank**. The aim of this project is to demonstrate strong testing knowledge in both **functional quality assurance** and **cybersecurity testing** following **industry standards**, **bank-domain testing processes**, and **OWASP Top 10 security testing techniques**.
+This repository contains a **complete end-to-end Manual Testing ** for a simulated banking application called **SecureBank**. The aim of this project is to demonstrate strong testing knowledge in both **functional quality assurance**  following **industry standards**, **bank-domain testing processes**, and **OWASP Top 10 security testing techniques**.
 
 This project is ideal for:
 - SQA / QA Engineers  
@@ -41,30 +41,7 @@ This project includes everything needed for a full SQA portfolio:
 
 This is the recommended folder structure for your GitHub repo:
 
-📦 SecureBank-Testing
-│
-├── README.md ← Main Project Documentation
-│
-├── TestPlan/
-│ └── SecureBank_TestPlan.pdf
-│
-├── TestCases/
-│ ├── Functional_TestCases.xlsx
-│ ├── Security_TestCases.xlsx
-│
-├── BugReports/
-│ ├── Bug_Report_Template.docx
-│ ├── Reported_Bugs.xlsx
-│
-├── Screenshots/
-│ ├── Login_Test.png
-│ ├── Transfer_Test.png
-│ ├── Dashboard.png
-│
-└── Summary/
-└── Project_Summary.docx
-
----
+<img width="575" height="470" alt="image" src="https://github.com/user-attachments/assets/9a9513a4-87e5-4a72-b6d8-6a525f975c7a" />
 
 # 📝 3. Test Plan (Detailed Overview)
 
