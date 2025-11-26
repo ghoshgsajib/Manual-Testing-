@@ -122,54 +122,63 @@ Below are the high-level scenarios you tested.
 
 ---
 
+
 # 📋 5. Functional Test Cases (Expanded Table)
 
-```markdown
-## Functional Test Cases
+## **Functional Test Cases**
 
-| TC ID | Module | Test Case Description | Pre-Condition | Steps | Expected Result |
-|------|--------|-----------------------|---------------|-------|------------------|
-| TC_LOGIN_01 | Login | Login with valid credentials | User registered | 1. Open login page 2. Enter valid email 3. Enter password 4. Click Login | User redirected to dashboard |
-| TC_LOGIN_02 | Login | Login with invalid password | User registered | Enter valid email + wrong password | Error message “Invalid credentials” |
-| TC_BAL_01 | Balance | Check balance | Logged in | Click "Balance" page | System displays correct balance |
-| TC_TRF_03 | Transfer | Transfer with insufficient balance | Logged in + low balance | Enter large amount | Should show "Insufficient balance" |
-| TC_PROF_02 | Profile | Change password | Logged in | Enter old + new password | Password updated successfully |
+| **TC ID**   | **Module** | **Test Case Description**          | **Pre-Condition**       | **Steps**                                                                               | **Expected Result**                    |
+| ----------- | ---------- | ---------------------------------- | ----------------------- | --------------------------------------------------------------------------------------- | -------------------------------------- |
+| TC_LOGIN_01 | Login      | Login with valid credentials       | User registered         | 1. Open login page <br> 2. Enter valid email <br> 3. Enter password <br> 4. Click Login | User redirected to dashboard           |
+| TC_LOGIN_02 | Login      | Login with invalid password        | User registered         | Enter valid email + wrong password                                                      | Error message “Invalid credentials”    |
+| TC_BAL_01   | Balance    | Check balance                      | Logged in               | Click **Balance** page                                                                  | System displays correct balance        |
+| TC_TRF_03   | Transfer   | Transfer with insufficient balance | Logged in + low balance | Enter a large transfer amount                                                           | Should show **“Insufficient balance”** |
+| TC_PROF_02  | Profile    | Change password                    | Logged in               | Enter old + new password                                                                | Password updated successfully          |
 
-🔐 6. Security Testing (Detailed)
+---
 
-Banking apps must be secure. You performed:
+# 🔐 6. Security Testing (Detailed)
 
-🛡 6.1 OWASP Top 10 Testing
-Vulnerability	Description
-A1: Broken Access Control	Users accessing others’ accounts
-A2: Cryptographic Failures	Sensitive data not encrypted
-A3: Injection Attacks	SQL/XML/Command Injection
-A4: Insecure Design	Weak session logic
-A5: Security Misconfiguration	Exposed debug endpoints
-A7: Identification & Authentication Failures	Weak login policies
-A8: Software & Data Integrity Failures	Missing integrity checks
-A9: Security Logging Failures	Missing audit trails
-A10: Server-Side Request Forgery (SSRF)	Manipulating backend calls
+Banking apps must be secure. Below is the security coverage:
 
-7.## Security Test Cases
+## **🛡 6.1 OWASP Top 10 Testing**
 
-| TC ID | Vulnerability | Test Description | Steps | Expected Result |
-|-------|--------------|------------------|-------|-----------------|
-| SEC_AUTH_01 | Brute Force | Test repeated login attempts | Try 10 wrong passwords | Account must lock |
-| SEC_SQL_02 | SQL Injection | Inject `' OR 1=1--` in username | Try login | Login should NOT bypass |
-| SEC_XSS_03 | Stored XSS | Insert `<script>alert(1)</script>` in profile page | Refresh page | Script must NOT execute |
-| SEC_IDOR_04 | IDOR | Access /user/5 as user 3 | Change user ID in URL | Access denied |
-| SEC_API_05 | Missing Authentication | Call API without token | Remove auth header | API must reject request |
+| **OWASP Code** | **Vulnerability**                        | **Description**                  |
+| -------------- | ---------------------------------------- | -------------------------------- |
+| A1             | Broken Access Control                    | Users accessing others’ accounts |
+| A2             | Cryptographic Failures                   | Sensitive data not encrypted     |
+| A3             | Injection Attacks                        | SQL / XML / Command Injection    |
+| A4             | Insecure Design                          | Weak session logic               |
+| A5             | Security Misconfiguration                | Exposed debug endpoints          |
+| A7             | Identification & Authentication Failures | Weak login policies              |
+| A8             | Software & Data Integrity Failures       | Missing integrity checks         |
+| A9             | Security Logging Failures                | Missing audit trails             |
+| A10            | Server-Side Request Forgery (SSRF)       | Manipulating backend calls       |
 
-8. Tools Used
+---
 
-Excel → Test Cases
+# 🛡️ 7. Security Test Cases
 
-MS Word / Docs → Test Plan, Test Summary
+| **TC ID**   | **Vulnerability**      | **Test Description**               | **Steps**              | **Expected Result**     |
+| ----------- | ---------------------- | ---------------------------------- | ---------------------- | ----------------------- |
+| SEC_AUTH_01 | Brute Force            | Repeated login attempts            | Try 10 wrong passwords | Account must lock       |
+| SEC_SQL_02  | SQL Injection          | Inject `' OR 1=1--`                | Attempt login          | Login should NOT bypass |
+| SEC_XSS_03  | Stored XSS             | Insert `<script>alert(1)</script>` | Refresh page           | Script must NOT execute |
+| SEC_IDOR_04 | IDOR                   | Unauthorized user access           | Change user ID in URL  | Access denied           |
+| SEC_API_05  | Missing Authentication | API call without token             | Remove auth header     | API must reject request |
 
-Jira / Trello (optional) → Bug Tracking
+---
 
-GitHub → Version control
+# 🛠️ 8. Tools Used
+
+| **Purpose**             | **Tools**             |
+| ----------------------- | --------------------- |
+| Test Cases              | Excel                 |
+| Test Plan & Summary     | MS Word / Google Docs |
+| Bug Tracking (Optional) | Jira / Trello         |
+
+---
+
 Author
 
 ###Name: Sajib Ghosh
